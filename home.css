@@ -1,0 +1,95 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles for the body */
+body {
+    background: linear-gradient(to right, #8c52ff, #5ce1e6);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align items to the right */
+    justify-content: flex-start; /* Align content to the top */
+    height: 100vh;
+    margin: 0;
+    background-image: url('lhome1.png'); /* Set the image as background */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    position: relative; /* Relative positioning for the body */
+}
+
+/* Styles for the navigation bar */
+.navbar {
+    background-color:deepskyblue;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    position: absolute; /* Absolute positioning for the navigation bar */
+    top: 0; /* Place the navigation bar at the top of the body */
+    left: 0;
+}
+
+/* Styles for the navigation links */
+.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Styles for the content container */
+.content {
+    flex-grow: 1; /* Allow content to grow and take remaining space */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align items to the right */
+    justify-content: flex-end; /* Align content to the top */
+}
+
+/* Styles for the header container */
+.header {
+    background-color: #89CFF0;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Styles for the search bar */
+.search {
+    text-align: center;
+    margin: 20px; /* Add some margin to create space */
+}
+
+.search input[type="text"] {
+    padding: 10px;
+    width: 400px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.search button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
