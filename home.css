@@ -15,7 +15,7 @@ body {
     justify-content: flex-start; /* Align content to the top */
     height: 100vh;
     margin: 0;
-    background-image: url('lhome1.png'); /* Set the image as background */
+    background-image: url('h.png'); /* Set the image as background */
     background-size: cover; /* Cover the entire viewport */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent image repetition */
@@ -24,7 +24,7 @@ body {
 
 /* Styles for the navigation bar */
 .navbar {
-    background-color:deepskyblue;
+    background-color:blue;
     color: #fff;
     padding: 10px 0;
     text-align: center;

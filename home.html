@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>G2-like Header with Centered Search Bar</title>
     <link rel="stylesheet" href="home.css"/>
+    <style>
+        /* Styles for the button */
+        .button {
+            position: fixed;
+            bottom: 200px; /* Adjust the vertical position */
+            left: 180px; /* Adjust the horizontal position */
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 20px 200px;
+            font-size: 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #d3d7db; /* Change background color on hover */
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -15,13 +34,7 @@
             <li><a href="#">Reviews</a></li>
         </ul>
     </nav>
-    <div class="content">
-        <header class="header">
-            <div class="search">
-                <input type="text" placeholder="Search">
-                <button>Search</button>
-            </div>
-        </header>
-    </div>
+    <!-- Button positioned up and to the left side -->
+    <button class="button">Explore</button>
 </body>
 </html>
