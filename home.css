@@ -5,32 +5,15 @@
     box-sizing: border-box;
 }
 
-/* Styles for the body */
-body {
-    background: linear-gradient(to right, #8c52ff, #5ce1e6);
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end; /* Align items to the right */
-    justify-content: flex-start; /* Align content to the top */
-    height: 100vh;
-    margin: 0;
-    background-image: url('h.png'); /* Set the image as background */
-    background-size: cover; /* Cover the entire viewport */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent image repetition */
-    position: relative; /* Relative positioning for the body */
-}
-
 /* Styles for the navigation bar */
 .navbar {
-    background-color:blue;
+    background-color: blue;
     color: #fff;
     padding: 10px 0;
     text-align: center;
     width: 100%;
-    position: absolute; /* Absolute positioning for the navigation bar */
-    top: 0; /* Place the navigation bar at the top of the body */
+    position: absolute;
+    top: 0;
     left: 0;
 }
 
@@ -51,45 +34,259 @@ body {
     color: #fff;
 }
 
-/* Styles for the content container */
-.content {
-    flex-grow: 1; /* Allow content to grow and take remaining space */
+/* Styles for the first section */
+.first-section {
+    background-image: url('Software.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end; /* Align items to the right */
-    justify-content: flex-end; /* Align content to the top */
+    justify-content: flex-end;
+    align-items: flex-start;
 }
 
-/* Styles for the header container */
-.header {
-    background-color: #89CFF0;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-}
-
-/* Styles for the search bar */
-.search {
-    text-align: center;
-    margin: 20px; /* Add some margin to create space */
-}
-
-.search input[type="text"] {
-    padding: 10px;
-    width: 400px;
-    font-size: 16px;
-    border: none;
-    border-radius: 20px;
-    margin-right: 10px;
-}
-
-.search button {
+/* Styles for the button */
+.button {
+    position: absolute;
+    bottom: 200px;
+    left: 280px;
     background-color: #007bff;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 20px 100px;
     font-size: 16px;
     border-radius: 20px;
     cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for the button */
+.button:hover {
+    background-color: #0056b3;
+}
+
+.new-section {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Add a navy blue background color to the lower half */
+    background: linear-gradient(to bottom, #fff 50%, navy 50%);
+}
+
+.section-content {
+    display: flex;
+    flex-direction: row; /* Create a two-column layout */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    padding: 20px;
+    width: 100%; /* Ensure the content doesn't overflow */
+    box-sizing: border-box;
+}
+
+.section-content img {
+    max-width: 50%; /* Adjust the image width to 50% of its container */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Add spacing between image and text */
+    max-height: 50vh; /* Set a maximum height to make images more visible */
+}
+
+/* Styles for the text in the new section */
+.text {
+    flex-grow: 1; /* Allow text to take remaining space */
+    text-align: left; /* Align text to the left */
+    margin-bottom: 10px; /* Add spacing between text and bottom edge */
+    max-width: 50%; /* Limit the maximum width of text */
+}
+
+/* Apply white color to second section's text */
+.white-text .text h1,
+.white-text .text h2,
+.white-text .text p {
+    color: white;
+}
+
+
+.text h1 {
+    font-size: 2.5rem; /* Increase the font size for h1 */
+    margin-bottom: 10px; /* Add spacing between elements */
+}
+
+.text h2 {
+    font-size: 1.8rem; /* Increase the font size for h2 */
+    margin-bottom: 10px; /* Add spacing between elements */
+}
+
+.text p {
+    font-size: 1.4rem; /* Increase the font size for p */
+    margin-bottom: 20px; /* Add spacing between elements */
+}
+
+/* Styles for the round button */
+.round-button {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Text color */
+    border: none;
+    padding: 15px 30px;
+    border-radius: 20px; /* Make the button round with some border radius */
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+    margin-top: 10px; /* Add spacing between text and button */
+}
+
+/* Change button color on hover */
+.round-button:hover {
+    background-color: #0056b3; /* New background color on hover */
+}
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Footer styles */
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Map styles */
+.map {
+    width: 100%;
+}
+
+/* Footer content styles */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Adjust the gap between columns */
+    align-items: center;
+}
+
+/* Footer column styles */
+.footer-column {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #007bff;
+}
+
+/* Social links styles */
+.social-links {
+    display: flex;
+    gap: 10px; /* Adjust the gap between social icons */
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+/* Add a media query for screens smaller than 768px (adjust as needed) */
+/* Add a media query for screens smaller than 768px (adjust as needed) */
+@media (max-width: 768px) {
+    .navbar {
+        /* Adjust styles for the navigation bar on smaller screens */
+        padding: 10px;
+    }
+
+    .first-section {
+        /* Adjust styles for the first section on smaller screens */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .button {
+        /* Adjust styles for the button in the first section on smaller screens */
+        position: relative;
+        bottom: auto;
+        left: auto;
+        margin: 20px 0;
+    }
+
+    .new-section {
+        /* Adjust styles for the new section on smaller screens */
+        padding: 10px;
+    }
+
+    .section-content {
+        /* Adjust styles for section content on smaller screens */
+        flex-direction: column;
+    }
+
+    .section-content img {
+        /* Adjust styles for images on smaller screens */
+        max-width: 100%;
+        margin-right: 0;
+        max-height: auto;
+    }
+
+    .text {
+        /* Adjust styles for text on smaller screens */
+        text-align: center;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .round-button {
+        /* Adjust styles for the button in the first section on smaller screens */
+        margin-top: 20px; /* Increase spacing between button and text */
+    }
+
+    /* Move the last image above the text in the last section */
+    .new-section .section-content:last-child {
+        flex-direction: column-reverse; /* Reverse the order of image and text */
+        align-items: center; /* Center content vertically */
+        margin-top: 0; /* Remove margin to adjust positioning */
+    }
 }
