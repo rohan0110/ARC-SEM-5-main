@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Registration</title>
+    <link rel="stylesheet" href="vendor_reg.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="container">
+        <form action="process_registration.php" method="POST" class="registration-form">
+            <h1>Company Registration</h1>
+            
+            <!-- Company Information -->
+            <div class="form-group">
+                <label for="companyName">Company Name:</label>
+                <input type="text" id="companyName" name="companyName" required>
+            </div>
+            
+            <!-- Contact Information -->
+            <div class="form-group">
+                <label for="contactPerson">Contact Person:</label>
+                <input type="text" id="contactPerson" name="contactPerson" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="contactEmail">Contact Email:</label>
+                <input type="email" id="contactEmail" name="contactEmail" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="contactPhone">Contact Phone:</label>
+                <input type="tel" id="contactPhone" name="contactPhone">
+            </div>
+            
+            <!-- Social Media Links -->
+            <div class="form-group">
+                <label for="linkedin">LinkedIn Profile:</label>
+                <input type="url" id="linkedin" name="linkedin">
+            </div>
+            
+            <div class="form-group">
+                <label for="twitter">Twitter Profile:</label>
+                <input type="url" id="twitter" name="twitter">
+            </div>
+            
+            <div class="form-group">
+                <label for="facebook">Facebook Profile:</label>
+                <input type="url" id="facebook" name="facebook">
+            </div>
+            
+            <!-- Legal Information -->
+            <div class="form-group">
+                <label for="companyAddress">Company Address:</label>
+                <textarea id="companyAddress" name="companyAddress" rows="4" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="registrationNumber">Registration Number:</label>
+                <input type="text" id="registrationNumber" name="registrationNumber" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="legalStatus">Legal Status:</label>
+                <input type="text" id="legalStatus" name="legalStatus" required>
+            </div>
+            
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

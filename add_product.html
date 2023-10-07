@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Submission Form</title>
+    <link rel="stylesheet" href="add_product.css"> <!-- Include your CSS file -->
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main class="container">
+        <h1>Submit Your Product</h1>
+        <form action="submit_product.php" method="POST">
+            <div class="form-group">
+                <label for="product_name">Product Name:</label>
+                <input type="text" id="product_name" name="product_name" required>
+            </div>
+            <div class="form-group">
+                <label for="category">Category:</label>
+                <select id="category" name="category">
+                    <option value="finance">Finance</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="e-commerce">E-commerce</option>
+                    <option value="technology">Technology</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="product_image">Product Image:</label>
+                <input type="file" id="product_image" name="product_image" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="website_url">Website URL:</label>
+                <input type="url" id="website_url" name="website_url" required>
+            </div>
+            <div class="form-group">
+                <label for="contact_email">Contact Email:</label>
+                <input type="email" id="contact_email" name="contact_email" required>
+            </div>
+            <button type="submit">Submit Product</button>
+        </form>
+    </main>
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+</body>
+</html>
