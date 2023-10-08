@@ -1,162 +1,140 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-
-* {
-    box-sizing: border-box;
-}
+/* Add your CSS styles here */
 
 body {
-    background-color: #28223F;
-    font-family: Montserrat, sans-serif;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-}
-
-h3 {
-    margin: 10px 0;
-}
-
-h6 {
-    margin: 5px 0;
-    text-transform: uppercase;
-}
-
-p {
-    font-size: 14px;
-    line-height: 21px;
-}
-
-.card-container {
-    background-color: #231E39;
-    border-radius: 5px;
-    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
-    color: #B3B8CD;
-    padding-top: 30px;
-    position: relative;
-    width: 350px;
-    max-width: 100%;
-    text-align: center;
-    margin: 10px;
-    transition: background-color 0.3s, transform 0.3s; /* Added transitions for hover effect */
-}
-
-.card-container:hover {
-    background-color: #333; /* Change the background color to a lighter shade on hover */
-    transform: scale(1.05); /* Scale up the card on hover */
-}
-
-.card-container .pro {
-    color: #231E39;
-    background-color: #FEBB0B;
-    border-radius: 3px;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 3px 7px;
-    position: absolute;
-    top: 30px;
-    left: 30px;
-}
-
-.card-container .round {
-    border: 1px solid #03BFCB;
-    border-radius: 50%;
-    padding: 7px;
-}
-
-button.primary {
-    background-color: #03BFCB;
-    border: 1px solid #03BFCB;
-    border-radius: 3px;
-    color: #231E39;
-    font-family: Montserrat, sans-serif;
-    font-weight: 500;
-    padding: 10px 25px;
-}
-
-button.primary.ghost {
-    background-color: transparent;
-    color: #02899C;
-}
-
-.skills {
-    background-color: #1F1A36;
-    text-align: left;
-    padding: 15px;
-    margin-top: 30px;
-}
-
-.skills ul {
-    list-style-type: none;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
     margin: 0;
     padding: 0;
 }
 
-.skills ul li {
-    border: 1px solid #2D2747;
-    border-radius: 2px;
-    display: inline-block;
-    font-size: 12px;
-    margin: 0 7px 7px 0;
-    padding: 7px;
-}
-
-footer {
-    background-color: #222;
-    color: #fff;
-    font-size: 14px;
-    bottom: 0;
-    position: fixed;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 999;
-}
-
-footer p {
-    margin: 10px 0;
-}
-
-footer i {
-    color: red;
-}
-
-footer a {
-    color: #3c97bf;
-    text-decoration: none;
-}
-
-/* Styles for the navigation bar */
+/* Navigation Bar Styles */
 .navbar {
-    background-color: #333; /* Choose your desired background color */
-    color: #fff; /* Text color */
+    background-color: #333;
+    color: #fff;
     padding: 10px 0;
     text-align: center;
     width: 100%;
 }
 
-.navbar ul {
+.navbar .logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nav-links {
     list-style-type: none;
     padding: 0;
 }
 
-.navbar li {
+.nav-links li {
     display: inline;
     margin-right: 20px;
 }
 
-.navbar a {
+.nav-links a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
 }
 
-.navbar a:hover {
-    color: #03BFCB; /* Hover color */
+.nav-links a:hover {
+    color: #03BFCB;
 }
-/* Styles for social icons */
+
+/* Main Section Styles */
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 40px;
+}
+
+/* About Us Image Styles */
+.about-us-image {
+    flex: 1;
+    max-width: 30%;
+}
+
+.about-us-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* About Us Content Styles */
+.about-us-content {
+    flex: 2;
+    padding: 20px;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+
+.about-us-content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+/* Meet Our Creators Section Styles */
+.meet-our-creators {
+    padding: 40px;
+    text-align: center;
+    background-color: #333;
+    color: #fff; /* Text color for the Meet Our Creators section */
+}
+
+.meet-our-creators h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Profiles Section Styles */
+.profiles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    color: #333;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.card-container:hover {
+    background-color: #f5f5f5;
+    transform: scale(1.05);
+}
+
+.pro {
+    background-color: #FEBB0B;
+    color: #231E39;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 3px 7px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.round {
+    border: 2px solid #03BFCB;
+    border-radius: 50%;
+    padding: 7px;
+    max-width: 100px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
 .social-icon {
     font-size: 24px;
     color: #03BFCB;
@@ -167,4 +145,32 @@ footer a {
 
 .social-icon:hover {
     color: #02899C;
+}
+
+.skills {
+    background-color: #F2F2F2;
+    text-align: left;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.skills h6 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.skills ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skills ul li {
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 7px 7px 0;
+    padding: 7px 15px;
 }

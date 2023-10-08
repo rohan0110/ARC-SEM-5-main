@@ -3,109 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Page</title>
-    <link rel="stylesheet" href="aboutus.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-c1Iq7YKl3jMD+I6zbpKYr7BpqDjFjxI1tiuLH5zG5vJl6p0p0b6VR5wxIh5Mf5Cn" crossorigin="anonymous">
+    <title>About Us </title>
+    <link rel="stylesheet" href="aboutus.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k4t5V/wq3W5dS03XuyzWzm/x5t9QT4lztq5z90i3BpK89s8Htb5Sx1C5j4I5CzX9p" crossorigin="anonymous">
 </head>
 <body>
+    <!-- Navigation Bar -->
     <nav class="navbar">
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="aboutus.html">About</a></li>
-            <li><a href="#">Services</a></li>
+        <div class="logo">
+            <img src="logo.png" alt="Your Website Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Software Categories</a></li>
+            <li><a href="#">User Reviews</a></li>
+            <li><a href="#">About Us</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-    </nav>    
-    <div class="card-container">
-        <span class="pro">PRO</span>
-        <img class="round" src="https://randomuser.me/api/portraits/women/79.jpg" alt="user" />
-        <h3>Chris Gadekar</h3>
-        <h6>Mumbai</h6>
-        <p>User interface designer and <br/> front-end developer</p>
-        <div class="buttons">
-            <a href="#" class="social-icon">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="#" class="social-icon">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="#" class="social-icon">
-                <i class="fab fa-instagram"></i>
-            </a>
-        </div>  
-        <div class="skills">
-            <h6>Skills</h6>
-            <ul>
-                <li>UI / UX</li>
-                <li>Front End Development</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node</li>
-            </ul>
+    </nav>
+
+    <!-- Main Section: Image and About Us -->
+    <section class="main-section">
+        <div class="column about-us-image">
+            <img src="aboutus.jpg" alt="About Us Image">
         </div>
-    </div>
-    <div class="card-container">
-        <span class="pro">PRO</span>
-        <img class="round" src="https://randomuser.me/api/portraits/women/79.jpg" alt="user" />
-        <h3>Rohan Gunge</h3>
-        <h6>Thane</h6>
-        <p>User interface designer and <br/> front-end developer</p>
-        <div class="buttons">
-            <a href="#" class="social-icon">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="#" class="social-icon">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="#" class="social-icon">
-                <i class="fab fa-instagram"></i>
-            </a>
+        <div class="column about-us-content">
+            <h1>About Us</h1>
+            <p>Welcome to ARC, your trusted source for discovering and evaluating software solutions.</p>
+            <p>Our mission is to simplify the software selection process for businesses and individuals, making it easy for you to find the perfect software to meet your needs.</p>
+            <p>Explore our comprehensive listings, read user reviews, and join our community of software enthusiasts.</p>
         </div>
-        <div class="skills">
-            <h6>Skills</h6>
-            <ul>
-                <li>UI / UX</li>
-                <li>Front End Development</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node</li>
-            </ul>
+    </section>
+    
+    <!-- Meet Our Creators Section -->
+    <section class="meet-our-creators">
+        <h1>Meet Our Creators</h1>
+    
+        <!-- Profiles Section -->
+        <div class="profiles">
+            <!-- Profile 1 -->
+            <div class="card-container">
+                <span class="pro">PRO</span>
+                <img class="round" src="https://randomuser.me/api/portraits/women/79.jpg" alt="user" />
+                <h3>Chris Gadekar</h3>
+                <h6><i class="fas fa-map-marker-alt"></i> Mumbai</h6>
+                <p>User interface designer and front-end developer. Chris specializes in creating visually stunning and user-friendly interfaces for web applications. When not designing, Chris enjoys exploring the latest design trends and sipping on a hot cup of coffee.</p>
+                <div class="skills">
+                    <h6>Skills</h6>
+                    <ul>
+                        <li>UI / UX</li>
+                        <li>Front End Development</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Node</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Profile 2 -->
+            <div class="card-container">
+                <span class="pro">PRO</span>
+                <img class="round" src="https://randomuser.me/api/portraits/men/81.jpg" alt="user" />
+                <h3>Rohan Gunge</h3>
+                <h6><i class="fas fa-map-marker-alt"></i> Thane</h6>
+                <p>Application logic writer and problem solver. Rohan ensures the smooth and efficient functioning of our software applications. In his free time, Rohan enjoys hiking and experimenting with new programming languages.</p>
+                <div class="skills">
+                    <h6>Skills</h6>
+                    <ul>
+                        <li>Software Logic</li>
+                        <li>Algorithm Development</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Profile 3 -->
+            <div class="card-container">
+                <span class="pro">PRO</span>
+                <img class="round" src="https://randomuser.me/api/portraits/men/82.jpg" alt="user" />
+                <h3>Ashish Varghese</h3>
+                <h6><i class="fas fa-map-marker-alt"></i> Mumbai</h6>
+                <p>Backend developer specializing in database management and server architecture. Ashish ensures our applications are secure, scalable, and performant. In his free time, he enjoys reading and staying updated with technology trends.</p>
+                <div class="skills">
+                    <h6>Skills</h6>
+                    <ul>
+                        <li>Backend Development</li>
+                        <li>Database Management</li>
+                        <li>Server Architecture</li>
+                        <li>Java</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="card-container">
-        <span class="pro">PRO</span>
-        <img class="round" src="https://randomuser.me/api/portraits/women/79.jpg" alt="user" />
-        <h3>Ashish Varghese</h3>
-        <h6>Mumbai</h6>
-        <p>User interface designer and <br/> front-end developer</p>
-        <div class="buttons">
-            <a href="#" class="social-icon">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="#" class="social-icon">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="#" class="social-icon">
-                <i class="fab fa-instagram"></i>
-            </a>
-        </div>        
-        <div class="skills">
-            <h6>Skills</h6>
-            <ul>
-                <li>UI / UX</li>
-                <li>Front End Development</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node</li>
-            </ul>
-        </div>
-    </div>
+    </section>    
 </body>
 </html>
-``

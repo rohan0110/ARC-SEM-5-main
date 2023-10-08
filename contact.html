@@ -3,75 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-    <section id="contact">
-  
-        <h1 class="section-header">Contact</h1>
-        
-        <div class="contact-wrapper">
-        
-        <!-- Left contact page --> 
-          
-          <form id="contact-form" class="form-horizontal" role="form">
-             
-            <div class="form-group">
-              <div class="col-sm-12">
-                <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
-              </div>
-            </div>
-      
-            <div class="form-group">
-              <div class="col-sm-12">
-                <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
-              </div>
-            </div>
-      
-            <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
-            
-            <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-              <div class="alt-send-button">
-                <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
-              </div>
-            
-            </button>
-            
-          </form>
-          
-        <!-- Left contact page --> 
-          
-            <div class="direct-contact-container">
-      
-              <ul class="contact-list">
-                <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">City, State</span></i></li>
-                
-                <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>
-                
-                <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">hitmeup@gmail.com</a></span></i></li>
-                
-              </ul>
-      
-              <hr>
-              <ul class="social-media-list">
-                <li><a href="#" target="_blank" class="contact-icon">
-                  <i class="fa fa-github" aria-hidden="true"></i></a>
-                </li>
-                <li><a href="#" target="_blank" class="contact-icon">
-                  <i class="fa fa-codepen" aria-hidden="true"></i></a>
-                </li>
-                <li><a href="#" target="_blank" class="contact-icon">
-                  <i class="fa fa-twitter" aria-hidden="true"></i></a>
-                </li>
-                <li><a href="#" target="_blank" class="contact-icon">
-                  <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                </li>       
-              </ul>
-              <hr>
-              <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
-            </div>
+  <nav class="navbar">
+    <div class="logo">
+        <img src="logo.png" alt="Your Website Logo">
+    </div>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Software Categories</a></li>
+        <li><a href="#">User Reviews</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <div>
+    <h1>Contact Us</h1>
+  </div>
+  <section class="contact-container">
+    <div class="left-column">
+      <div><p><strong>Company Name</strong></p></div>
+      <div><p>Email: company@example.com</p></div>
+      <div><p>Location: City, State</p></div>
+      <div><p>Phone: (123) 456-7890</p></div>
+        <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.6789!2d-74.0059723!3d40.7127753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDU4JzUwLjkiTiA3NMKwMjUnMjIuMSJX!5e0!3m2!1sen!2sus!4v1605555555555!5m2!1sen!2sus" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>  
+      </div>
+    <div class="right-column">
+        <form id="contact-form" action="#" method="post">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
         </div>
-      </section>      
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submit-btn">Submit</button>
+        </div>
+        </form>
+    </div>
+  </section>
+  <script src="contact_form.js"></script>
 </body>
 </html>
