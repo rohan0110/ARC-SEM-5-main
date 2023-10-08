@@ -76,7 +76,7 @@
     flex-direction: column;
     align-items: center;
     /* Add a navy blue background color to the lower half */
-    background: linear-gradient(to bottom, #fff 50%, navy 50%);
+    background: linear-gradient(to bottom, navy 50%, #fff 50%);
 }
 
 .section-content {
@@ -85,7 +85,7 @@
     align-items: center; /* Vertically center content */
     justify-content: center; /* Horizontally center content */
     padding: 20px;
-    width: 100%; /* Ensure the content doesn't overflow */
+    max-width: 100%; /* Ensure the content doesn't overflow */
     box-sizing: border-box;
 }
 
@@ -101,14 +101,15 @@
     flex-grow: 1; /* Allow text to take remaining space */
     text-align: left; /* Align text to the left */
     margin-bottom: 10px; /* Add spacing between text and bottom edge */
-    max-width: 50%; /* Limit the maximum width of text */
+    max-width: 50%;
+    color: #fff; /* Limit the maximum width of text */
 }
 
 /* Apply white color to second section's text */
 .white-text .text h1,
 .white-text .text h2,
 .white-text .text p {
-    color: white;
+    color: black;
 }
 
 .text h1 {
@@ -144,33 +145,19 @@
     background-color: #0056b3; /* New background color on hover */
 }
 
-/* Updated footer styles */
 /* Footer styles */
 footer {
-    bottom: 0;
     background-color: #292c2f;
     color: white;
-    font-size: 18px; /* Adjust the font size */
+    font-size: 18px;
     text-align: center;
-    line-height: 1.5; /* Adjust the line height */
+    line-height: 1.5;
     width: 100%;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
-    padding: 20px 0; /* Adjust the padding */
-    margin-top: 20px; /* Adjust the margin */
-}
-
-/* Rest of your footer CSS remains the same */
-/* ... */
-
-/* Footer main content */
-footer .main {
-    max-height: 550px;
-    background-color: #292c2f;
-    color: white;
-    font-size: 38pt;
-    text-align: center;
-    line-height: 550px;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
 }
 
 /* Footer distributed layout */
@@ -183,17 +170,24 @@ footer .footer-distributed {
     width: 100%;
 }
 
-/* Footer left, center, and right sections */
-footer .footer-distributed .footer-left,
-footer .footer-distributed .footer-center,
-footer .footer-distributed .footer-right {
-    display: inline-block;
-    vertical-align: top;
+/* Footer left section (middle) */
+footer .footer-distributed .footer-left {
+    width: 35%; /* Adjust the width of the middle section */
+    text-align: center; /* Align content to the left */
+    margin-left: 10px;
 }
 
-/* Footer left section */
-footer .footer-distributed .footer-left {
-    width: 40%;
+/* Footer right section (left) */
+footer .footer-distributed .footer-right {
+    width: 20%; /* Adjust the width of the left section */
+    text-align: left;
+    margin-right: 10px; /* Align content to the left */
+}
+
+/* Footer center section (right) */
+footer .footer-distributed .footer-center {
+    width: 35%; /* Adjust the width of the right section */
+    text-align: left; /* Align content to the right */
 }
 
 /* Footer heading */
@@ -229,11 +223,6 @@ footer .footer-distributed .footer-company-name {
     font-size: 14px;
     font-weight: normal;
     margin: 0;
-}
-
-/* Footer center section */
-footer .footer-distributed .footer-center {
-    width: 35%;
 }
 
 /* Footer center icons */
@@ -278,25 +267,21 @@ footer .footer-distributed .footer-center p a {
     text-decoration: none;
 }
 
-/* Footer right section */
-footer .footer-distributed .footer-right {
-    width: 20%;
-}
-
 /* Footer company about */
 footer .footer-distributed .footer-company-about {
     line-height: 20px;
     color: #92999f;
-    font-size: 13px;
+    font-size: 20px;
     font-weight: normal;
     margin: 0;
+    text-align: left;
 }
 
 /* Footer company about span */
 footer .footer-distributed .footer-company-about span {
     display: block;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 20px;
 }

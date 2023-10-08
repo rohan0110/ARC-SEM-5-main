@@ -92,3 +92,5 @@
     width: 24px; /* Set the width of social icons */
     height: auto;
 }
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
