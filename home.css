@@ -144,74 +144,186 @@
     background-color: #0056b3; /* New background color on hover */
 }
 
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Updated footer styles */
 /* Footer styles */
-.footer {
-    background-color: black;
+footer {
+    bottom: 0;
+    background-color: #292c2f;
     color: white;
-    padding: 20px;
+    font-size: 18px; /* Adjust the font size */
     text-align: center;
+    line-height: 1.5; /* Adjust the line height */
+    width: 100%;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    padding: 20px 0; /* Adjust the padding */
+    margin-top: 20px; /* Adjust the margin */
+}
+
+/* Rest of your footer CSS remains the same */
+/* ... */
+
+/* Footer main content */
+footer .main {
+    max-height: 550px;
+    background-color: #292c2f;
+    color: white;
+    font-size: 38pt;
+    text-align: center;
+    line-height: 550px;
+}
+
+/* Footer distributed layout */
+footer .footer-distributed {
     display: flex;
-    gap: 20px; /* Adjust the gap between sections */
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Allow content to wrap to the next line */
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
-/* Map styles */
-.map {
-    width: 300px; /* Set the width of the map */
-    height: 200px; /* Set the height of the map */
-    margin-right: 20px; /* Add spacing between the map and columns */
-    background-image: url('map-image.jpg'); /* Replace with your map image */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+/* Footer left, center, and right sections */
+footer .footer-distributed .footer-left,
+footer .footer-distributed .footer-center,
+footer .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
 }
 
-/* Footer columns styles */
-.footer-columns {
-    display: flex; /* Display columns side by side */
-    flex: 1; /* Allow columns to take up available space */
+/* Footer left section */
+footer .footer-distributed .footer-left {
+    width: 40%;
 }
 
-.footer-column {
-    flex: 1; /* Allow each column to take equal space */
-    text-align: left;
+/* Footer heading */
+footer .footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
 }
 
-.footer-column h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+/* Styling the span in the heading */
+footer .footer-distributed h3 span {
+    color: #5383d3;
 }
 
-.footer-column ul {
-    list-style: none;
+/* Footer links */
+footer .footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
     padding: 0;
 }
 
-.footer-column ul li {
-    margin-bottom: 10px;
-}
-
-.footer-column ul li a {
-    color: white;
+/* Styling footer links */
+footer .footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
     text-decoration: none;
-    transition: color 0.3s;
+    color: inherit;
 }
 
-.footer-column ul li a:hover {
-    color: #007bff;
+/* Footer company name */
+footer .footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
 }
 
-/* Social links styles */
-.social-links {
-    flex: 1; /* Allow social links to take available space */
-    display: flex;
-    flex-direction: column; /* Stack social icons vertically */
-    align-items: flex-end; /* Align social icons to the right */
+/* Footer center section */
+footer .footer-distributed .footer-center {
+    width: 35%;
+}
+
+/* Footer center icons */
+footer .footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+/* Footer envelope icon */
+footer .footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+/* Footer center paragraph */
+footer .footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+/* Footer center paragraph span */
+footer .footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+/* Styling footer center links */
+footer .footer-distributed .footer-center p a {
+    color: #5383d3;
+    text-decoration: none;
+}
+
+/* Footer right section */
+footer .footer-distributed .footer-right {
+    width: 20%;
+}
+
+/* Footer company about */
+footer .footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer company about span */
+footer .footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Footer icons */
+footer .footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+/* Styling footer icons */
+footer .footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 880px) {
+    /* Add responsive styles here */
+    /* ... */
 }
