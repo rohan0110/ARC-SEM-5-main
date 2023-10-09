@@ -94,3 +94,43 @@
 }
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+<footer class="footer">
+        <div class="footer-distributed">
+            <div class="footer-left">
+                <h3>ARC</h3>
+                <p class="footer-links">
+                    <a href="home.html">Home</a>
+                    ·
+                    <a href="aboutus.html">About</a>
+                    ·
+                    <a href="contact.html">Contact</a>
+                </p>
+                <p class="footer-company-name">ARC &copy; 2023</p>
+            </div>
+            <div class="footer-right">
+                <h3>About Company</h3>
+                <p class="footer-company-about">
+                    Dedicated to innovation, we strive to transform ideas into impactful solutions at ARC.
+                </p>
+                <div class="footer-icons">
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>Premier Automobiles Rd.</span> Kurla, Mumbai, India</p>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+1 555 123456</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="contact@ARC.com">contact@ARC.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Homepage</title>
+    <link rel="stylesheet" href="vendor.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul class="nav">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html"><button>Login</button></a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section for Vendors -->
+    <section class="hero-section">
+            <a href="register.html"><button class="round-button">Register Now</button></a>
+        <div class="hero-image">
+            <img src="vendor-hero-image.jpg" alt="Vendor Hero Image">
+        </div>
+    </section>
+
+    <!-- Features Section for Vendors -->
+    <section class="features-section">
+        <div class="feature">
+            <i class="fas fa-bullhorn"></i>
+            <h2>Reach a Wider Audience</h2>
+            <p>Get your software in front of potential customers worldwide.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-chart-line"></i>
+            <h2>Track Performance</h2>
+            <p>Monitor how your software is performing and make data-driven decisions.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-comments"></i>
+            <h2>User Feedback</h2>
+            <p>Collect valuable feedback from users to improve your software.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <h2>What Our Vendors Say</h2>
+        <div class="testimonial">
+            <img src="vendor-testimonial-1.jpg" alt="Vendor Testimonial 1">
+            <p>"Listing our software on this platform has been a game-changer for our business. The exposure and user feedback have been invaluable."</p>
+            <h3>John Doe, CEO of Software Co.</h3>
+        </div>
+        <div class="testimonial">
+            <img src="vendor-testimonial-2.jpg" alt="Vendor Testimonial 2">
+            <p>"We've seen a significant increase in downloads and sales since partnering with this platform. It's a must for any software vendor."</p>
+            <h3>Jane Smith, CTO of Tech Solutions</h3>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-distributed">
+            <div class="footer-left">
+                <h3>ARC</h3>
+                <p class="footer-links">
+                    <a href="home.html">Home</a>
+                    ·
+                    <a href="aboutus.html">About</a>
+                    ·
+                    <a href="contact.html">Contact</a>
+                </p>
+                <p class="footer-company-name">ARC &copy; 2023</p>
+            </div>
+            <div class="footer-right">
+                <h3>About Company</h3>
+                <p class="footer-company-about">
+                    Dedicated to innovation, we strive to transform ideas into impactful solutions at ARC.
+                </p>
+                <div class="footer-icons">
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>Premier Automobiles Rd.</span> Kurla, Mumbai, India</p>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+1 555 123456</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="contact@ARC.com">contact@ARC.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
