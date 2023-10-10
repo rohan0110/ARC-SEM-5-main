@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+    color: #333;
+    font-weight: normal;
+    font-size: 1em;
+    font-family: 'Roboto', Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Ensure full viewport height */
+}
+
+.container {
+    padding: 20px;
+    width: 70%; /* Adjust the width as needed */
+    max-width: 800px;
+    text-align: left;
+    font-size: large;
+    background-color: #00000070; /* Background color for the container */
+    border-radius: 10px; /* Rounded corners for the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Add space around input fields and make them rounded */
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    background: #EDEDED;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    padding: 15px 40px;
+    color: #fff;
+    border: none;
+    background: rgb(5, 5, 196);
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+/* Add spacing for the section with class 'section1' */
+.section1 {
+    margin: 20px 0;
+    text-align: left;
+}
+
+/* Add spacing for the section with class 'section2' */
+.section2 {
+    margin: 25px auto;
+    max-width: 800px; /* Adjust the max-width as needed */
+    padding: 0 20px;
+}
+
+/* Center text within 'section1' */
+.section1 h1 {
+    font-size: 40px;
+    color: rgb(5, 5, 196);
+    font-weight: normal;
+    text-align: center;
+}
+
+/* Style the form header within 'section2' */
+.section2 h3 {
+    font-weight: normal;
+    margin: 20px 0;
+    margin-top: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 19px;
+    color: rgb(5, 5, 196);
+    text-align: center;
+}
+
+/* Style the file input for image upload */
+input[type="file"] {
+    display: none; /* Hide the default file input */
+}
+
+/* Style the file input for image upload */
+
+
+.btn {
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer; /* Add cursor style */
+}
+
+.upload-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.upload-container label {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.upload-button {
+    background-color: #03BFCB;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Style the file input to be hidden */
+.upload-container input[type="file"] {
+    display: none;
+}
+
+/* Style the selected file name display */
+.upload-container .file-name {
+    color: #333;
+    margin-left: 10px;
+}

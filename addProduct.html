@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link rel="stylesheet" href="addproduct.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Add a Product</h2>
+        <form action="#" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" name="productName" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <label for="price">Price:</label>
+            <input type="text" id="price" name="price" required>
+
+            <label for="link">Product Link:</label>
+            <input type="text" id="link" name="link" required>
+
+            <div class="upload-container">
+                <label for="product_image">Upload Product Image:</label>
+                <input type="file" id="product_image" name="product_image" accept="image/*" required style="display: none;">
+                <button class="upload-button" onclick="document.getElementById('product_image').click();">Upload</button>
+                <span class="file-name">No file selected</span>
+            </div>
+                                   
+            <input type="submit" value="Add Product">
+        </form>
+    </div>
+    <script>
+        function validateForm() {
+            const productName = document.getElementById("productName").value;
+            const description = document.getElementById("description").value;
+            const price = document.getElementById("price").value;
+            const link = document.getElementById("link").value;
+            const productImage = document.getElementById("product_image").files[0]; // Get the selected file
+    
+            const pricePattern = /^\d+(\.\d{1,2})?$/;
+            const allowedExtensions = /\.(jpg|jpeg|png|gif)$/i;
+    
+            if (productName === "" || description === "" || price === "" || link === "" || !productImage) {
+                alert("All fields are required");
+                return false;
+            } else if (!pricePattern.test(price)) {
+                alert("Price must be a valid number with up to 2 decimal places");
+                return false;
+            } else if (!allowedExtensions.test(productImage.name)) {
+                alert("Invalid file type. Please upload an image (jpg, jpeg, png, gif).");
+                return false;
+            }
+    
+            return true;
+        }
+    </script>
+    
+</body>
+</html>
