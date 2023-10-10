@@ -10,27 +10,34 @@ body {
 /* Navigation Bar Styles */
 .navbar {
     background-color: #333;
-    color: #fff;
+    color: #fffbfb;
     padding: 10px 0;
     text-align: center;
     width: 100%;
+    position: relative; /* Add this line to make it a reference for absolute positioning */
 }
 
-/* Adjusted image size and spacing in the navigation bar */
-.navbar .logo img {
-    max-width: 20px; /* Adjust the max-width as needed */
+.logo {
+    max-width: 70px; /* Adjust the max-width as needed */
     height: auto;
-    margin-right: 10px; /* Add some spacing between the logo and links */
+    position: absolute; /* Position it absolutely */
+    left: 20px; /* Align to the left edge with some spacing */
+    top: 50%; /* Align vertically in the middle of the navbar */
+    transform: translateY(-50%); /* Correct the vertical alignment */
 }
 
+/* Add some spacing between the logo and links */
 .nav-links {
-    list-style-type: none;
-    padding: 0;
+    padding-left: 100px; /* Adjust the spacing as needed */
 }
 
 .nav-links li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 20px; /* Adjust the spacing between links */
+}
+
+.nav-links li:last-child {
+    margin-right: 0; /* Remove margin from the last link */
 }
 
 .nav-links a {
@@ -42,6 +49,7 @@ body {
 .nav-links a:hover {
     color: #03BFCB;
 }
+
 
 /* Main Section Styles */
 .main-section {
@@ -129,8 +137,11 @@ body {
     border: 2px solid #03BFCB;
     border-radius: 50%;
     padding: 7px;
-    max-width: 100px;
+    max-width: 150px;
+    width: 150px; /* Set width and height to the same value to make it square */
+    height: 150px; /* Set width and height to the same value to make it square */
 }
+
 
 .social-icons {
     margin-top: 10px;
